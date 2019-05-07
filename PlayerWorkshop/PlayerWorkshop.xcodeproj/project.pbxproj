@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		076B39D8326F428BEDFCFC89 /* Pods_PlayerWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294BFF37E784C47015CBC95C /* Pods_PlayerWorkshop.framework */; };
 		AB091C44228224200050352B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB091C43228224200050352B /* AppDelegate.swift */; };
 		AB091C46228224200050352B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB091C45228224200050352B /* ViewController.swift */; };
 		AB091C49228224200050352B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB091C47228224200050352B /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		294BFF37E784C47015CBC95C /* Pods_PlayerWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayerWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A3AFDDBEE68DB18F2DB58CB /* Pods-PlayerWorkshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayerWorkshop.debug.xcconfig"; path = "Target Support Files/Pods-PlayerWorkshop/Pods-PlayerWorkshop.debug.xcconfig"; sourceTree = "<group>"; };
+		6CFD4F1E461C6DEE1DE9A830 /* Pods-PlayerWorkshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayerWorkshop.release.xcconfig"; path = "Target Support Files/Pods-PlayerWorkshop/Pods-PlayerWorkshop.release.xcconfig"; sourceTree = "<group>"; };
 		AB091C40228224200050352B /* PlayerWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayerWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB091C43228224200050352B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB091C45228224200050352B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076B39D8326F428BEDFCFC89 /* Pods_PlayerWorkshop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12903730078E1FB08D5C340A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A3AFDDBEE68DB18F2DB58CB /* Pods-PlayerWorkshop.debug.xcconfig */,
+				6CFD4F1E461C6DEE1DE9A830 /* Pods-PlayerWorkshop.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6DE3468BB7FEE3C8AB65CB4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				294BFF37E784C47015CBC95C /* Pods_PlayerWorkshop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB091C37228224200050352B = {
 			isa = PBXGroup;
 			children = (
 				AB091C42228224200050352B /* PlayerWorkshop */,
 				AB091C41228224200050352B /* Products */,
+				12903730078E1FB08D5C340A /* Pods */,
+				6DE3468BB7FEE3C8AB65CB4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB091C52228224220050352B /* Build configuration list for PBXNativeTarget "PlayerWorkshop" */;
 			buildPhases = (
+				BAEBA71ACBD88AB969842C1D /* [CP] Check Pods Manifest.lock */,
 				AB091C3C228224200050352B /* Sources */,
 				AB091C3D228224200050352B /* Frameworks */,
 				AB091C3E228224200050352B /* Resources */,
+				F42CCDDFF81953C537C0FBF3 /* [CP] Embed Pods Frameworks */,
+				98206619B9B0DB1EE3CBF5AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +157,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		98206619B9B0DB1EE3CBF5AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayerWorkshop/Pods-PlayerWorkshop-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ComScore/SCORBundle.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SCORBundle.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlayerWorkshop/Pods-PlayerWorkshop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAEBA71ACBD88AB969842C1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayerWorkshop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F42CCDDFF81953C537C0FBF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayerWorkshop/Pods-PlayerWorkshop-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Clappr/Clappr.framework",
+				"${PODS_ROOT}/ComScore/ComScore/dynamic/iOS/ComScore.framework",
+				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework",
+				"${PODS_ROOT}/WMPlayer/Framework/iOS/WMPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/YouboraAVPlayerAdapter/YouboraAVPlayerAdapter.framework",
+				"${BUILT_PRODUCTS_DIR}/YouboraIMAAdapter/YouboraIMAAdapter.framework",
+				"${BUILT_PRODUCTS_DIR}/YouboraLib/YouboraLib.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Clappr.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ComScore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WMPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouboraAVPlayerAdapter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouboraIMAAdapter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouboraLib.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlayerWorkshop/Pods-PlayerWorkshop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB091C3C228224200050352B /* Sources */ = {
@@ -280,6 +389,7 @@
 		};
 		AB091C53228224220050352B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A3AFDDBEE68DB18F2DB58CB /* Pods-PlayerWorkshop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +408,7 @@
 		};
 		AB091C54228224220050352B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CFD4F1E461C6DEE1DE9A830 /* Pods-PlayerWorkshop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

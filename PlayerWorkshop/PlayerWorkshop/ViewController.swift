@@ -1,20 +1,19 @@
-//
-//  ViewController.swift
-//  PlayerWorkshop
-//
-//  Created by Rodrigo.Dezouzart on 07/05/19.
-//  Copyright © 2019 Rodrigo.Dezouzart. All rights reserved.
-//
-
 import UIKit
+import WMPlayer
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var playerContainer: UIView!
+    var player: WMPlayer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setupPlayer()
     }
-
-
+    
+    func setupPlayer() {
+        let options = [kSourceUrl : "5995939"]
+        player = WMPlayer(options: options)
+        player.attachTo(playerContainer, controller: self)
+    }
 }
-

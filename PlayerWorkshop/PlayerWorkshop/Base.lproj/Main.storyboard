@@ -17,9 +17,27 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72r-WF-Omj">
+                                <rect key="frame" x="24" y="100" width="327" height="184"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="72r-WF-Omj" secondAttribute="height" multiplier="16:9" id="dVO-z8-kP0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="72r-WF-Omj" secondAttribute="trailing" constant="24" id="5Q3-P3-aBO"/>
+                            <constraint firstItem="72r-WF-Omj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="nkh-5z-RIJ"/>
+                            <constraint firstItem="72r-WF-Omj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="q5Z-jb-ssf"/>
+                            <constraint firstItem="72r-WF-Omj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ygV-hw-G4d"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="playerContainer" destination="72r-WF-Omj" id="0rx-mr-yvS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
