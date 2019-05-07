@@ -46,7 +46,6 @@
 				4A3AFDDBEE68DB18F2DB58CB /* Pods-PlayerWorkshop.debug.xcconfig */,
 				6CFD4F1E461C6DEE1DE9A830 /* Pods-PlayerWorkshop.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +78,7 @@
 		AB091C42228224200050352B /* PlayerWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				AB3076842282FB7B000D5116 /* Plugins */,
 				AB091C43228224200050352B /* AppDelegate.swift */,
 				AB091C45228224200050352B /* ViewController.swift */,
 				AB091C47228224200050352B /* Main.storyboard */,
@@ -87,6 +87,13 @@
 				AB091C4F228224220050352B /* Info.plist */,
 			);
 			path = PlayerWorkshop;
+			sourceTree = "<group>";
+		};
+		AB3076842282FB7B000D5116 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Plugins;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
