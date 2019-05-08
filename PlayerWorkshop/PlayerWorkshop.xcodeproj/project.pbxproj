@@ -78,7 +78,7 @@
 		AB091C42228224200050352B /* PlayerWorkshop */ = {
 			isa = PBXGroup;
 			children = (
-				AB3076842282FB7B000D5116 /* Plugins */,
+				AB30769122838438000D5116 /* Plugins */,
 				AB091C43228224200050352B /* AppDelegate.swift */,
 				AB091C45228224200050352B /* ViewController.swift */,
 				AB091C47228224200050352B /* Main.storyboard */,
@@ -89,7 +89,7 @@
 			path = PlayerWorkshop;
 			sourceTree = "<group>";
 		};
-		AB3076842282FB7B000D5116 /* Plugins */ = {
+		AB30769122838438000D5116 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
 			);
