@@ -10,5 +10,5 @@ target 'PlayerWorkshop' do
   use_frameworks!
 
   # Pods for PlayerWorkshop
-  pod "WMPlayer"
+  pod "WMPlayer", "8.0.0"
 end

@@ -4,7 +4,7 @@ import WMPlayer
 class SharePlugin: MediaControlPlugin {
     var shareView: ShareView = .fromNib()
     
-    override open var pluginName: String {
+    open class override var name: String {
         return "SharePlugin"
     }
     
@@ -19,10 +19,6 @@ class SharePlugin: MediaControlPlugin {
     required init(context: UIObject) {
         super.init(context: context)
         bindEvents()
-    }
-
-    required init() {
-        super.init()
     }
     
     private func bindEvents() {
