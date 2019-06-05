@@ -4,7 +4,7 @@ PODS:
     - ComScore/Dynamic (= 5.8.0)
   - ComScore/Dynamic (5.8.0)
   - GoogleAds-IMA-iOS-SDK (3.7.3)
-  - WMPlayer (8.0.0):
+  - WMPlayer (8.0.1-snapshot):
     - Clappr (= 0.12.0)
     - ComScore (= 5.8.0)
     - GoogleAds-IMA-iOS-SDK (= 3.7.3)
@@ -19,7 +19,7 @@ PODS:
   - YouboraLib (6.1.5)
 
 DEPENDENCIES:
-  - WMPlayer (= 8.0.0)
+  - WMPlayer (= 8.0.1-snapshot)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -36,11 +36,11 @@ SPEC CHECKSUMS:
   Clappr: 39baf668b2b44c6462fd9c7ff8cc2f984953ee9c
   ComScore: e9f37d5da9ce5b3be314f923890da79f00b28ce6
   GoogleAds-IMA-iOS-SDK: 6dc764910309dcc982d6eb8b7de19d3cf94a6857
-  WMPlayer: 13ea15de3c2e791a4ca139b6bc206a8248706cb0
+  WMPlayer: c92e1b3e65b7b7bdd4dd543c76dc4389fab167e6
   YouboraAVPlayerAdapter: 98f27f8e0168db3d657a550b4be02cec6e55e4bd
   YouboraIMAAdapter: 5080ab5a4231f63d92f540f8540e9c315aae065f
   YouboraLib: f995fba55b2a5fad281cd5c4217bb58505a78fc5
 
-PODFILE CHECKSUM: a2b2c844755a7db86cf6fd57e2a5acf7b95f9f14
+PODFILE CHECKSUM: 9ab2f13a420e29e7d30ff86756a37be906e05d8e
 
 COCOAPODS: 1.6.1
